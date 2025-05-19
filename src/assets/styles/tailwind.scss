@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+ 
+@layer theme {
+  :root {
+    // --color-background: theme ('colors.zinc.900');
+    --color-background: #222222;
+    --color-foreground: #222222;
+
+    --color-background-modals: #292929;
+    --color-background-modals-hover: #2f2e2e;
+    --color-background-modals-active: #373636;
+    
+    --color-border: #363738;
+    --color-border-hover: #3e3f40;
+    --color-border-active: #464748;
+
+    --color-white: #ffffff;
+
+    --box-shadow-modals: 0 0 2px 0 rgba(0, 0, 0, .30), 0 4px 16px 0 rgba(0, 0, 0, .30);
+  }
+}
+
+@layer base {
+  body {
+    @apply min-h-[100dvh] bg-background;
+  }
+
+  .root {
+    @apply relative min-h-[100dvh] flex flex-col;
+  }
+}
+
+@layer components {
+
+}

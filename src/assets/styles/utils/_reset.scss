@@ -1,0 +1,33 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: #161B21;
+
+  color: #FFF;
+  line-height: 1.3;
+  font-size: 16px;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  text-decoration-skip: objects;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.3s, background-color 0.3s;
+
+  @include phone {
+    overscroll-behavior-y: contain;
+  }
+}
